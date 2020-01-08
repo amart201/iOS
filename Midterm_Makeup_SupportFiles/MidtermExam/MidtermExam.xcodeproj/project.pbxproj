@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38F9E03E238A12220089E29E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F9E03D238A12220089E29E /* User.swift */; };
+		38F9E041238B0FFC0089E29E /* ThreadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F9E03F238B0FFC0089E29E /* ThreadTableViewCell.swift */; };
+		38F9E042238B0FFC0089E29E /* ThreadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F9E040238B0FFC0089E29E /* ThreadTableViewCell.xib */; };
+		38F9E044238B4B2B0089E29E /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F9E043238B4B2B0089E29E /* MessagesViewController.swift */; };
+		38F9E046238B4B420089E29E /* CreateMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F9E045238B4B420089E29E /* CreateMessageViewController.swift */; };
+		38F9E048238B4B540089E29E /* MessageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F9E047238B4B540089E29E /* MessageDetailsViewController.swift */; };
+		38F9E04A238BA1E70089E29E /* ITIS-CS 4180 Midterm Message Threads App.postman_collection.json in Resources */ = {isa = PBXBuildFile; fileRef = 38F9E049238BA1E70089E29E /* ITIS-CS 4180 Midterm Message Threads App.postman_collection.json */; };
+		6095B3E92387D9A400A62012 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6095B3E82387D9A400A62012 /* LoginViewController.swift */; };
+		6095B3EB2387D9B200A62012 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6095B3EA2387D9B200A62012 /* SignUpViewController.swift */; };
+		6095B3ED2387D9BE00A62012 /* ThreadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6095B3EC2387D9BE00A62012 /* ThreadsViewController.swift */; };
+		60F6DB3B2387D8020036096A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F6DB3A2387D8020036096A /* AppDelegate.swift */; };
+		60F6DB402387D8020036096A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F6DB3E2387D8020036096A /* Main.storyboard */; };
+		60F6DB422387D8030036096A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60F6DB412387D8030036096A /* Assets.xcassets */; };
+		60F6DB452387D8030036096A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F6DB432387D8030036096A /* LaunchScreen.storyboard */; };
+		794EEBA2BC884AEC48CFF0A0 /* Pods_MidtermExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43837CF14871A9428453A08 /* Pods_MidtermExam.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3802639A9EE1EAC314C798E8 /* Pods-MidtermExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidtermExam.release.xcconfig"; path = "Target Support Files/Pods-MidtermExam/Pods-MidtermExam.release.xcconfig"; sourceTree = "<group>"; };
+		38F9E03D238A12220089E29E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		38F9E03F238B0FFC0089E29E /* ThreadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadTableViewCell.swift; sourceTree = "<group>"; };
+		38F9E040238B0FFC0089E29E /* ThreadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadTableViewCell.xib; sourceTree = "<group>"; };
+		38F9E043238B4B2B0089E29E /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		38F9E045238B4B420089E29E /* CreateMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMessageViewController.swift; sourceTree = "<group>"; };
+		38F9E047238B4B540089E29E /* MessageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailsViewController.swift; sourceTree = "<group>"; };
+		38F9E049238BA1E70089E29E /* ITIS-CS 4180 Midterm Message Threads App.postman_collection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "ITIS-CS 4180 Midterm Message Threads App.postman_collection.json"; path = "../../ITIS-CS 4180 Midterm Message Threads App.postman_collection.json"; sourceTree = "<group>"; };
+		6095B3E82387D9A400A62012 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6095B3EA2387D9B200A62012 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6095B3EC2387D9BE00A62012 /* ThreadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsViewController.swift; sourceTree = "<group>"; };
+		60F6DB372387D8020036096A /* MidtermExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidtermExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60F6DB3A2387D8020036096A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60F6DB3F2387D8020036096A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60F6DB412387D8030036096A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60F6DB442387D8030036096A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60F6DB462387D8030036096A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8190C70F52D9445E03B814E1 /* Pods-MidtermExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidtermExam.debug.xcconfig"; path = "Target Support Files/Pods-MidtermExam/Pods-MidtermExam.debug.xcconfig"; sourceTree = "<group>"; };
+		D43837CF14871A9428453A08 /* Pods_MidtermExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MidtermExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60F6DB342387D8020036096A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794EEBA2BC884AEC48CFF0A0 /* Pods_MidtermExam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60F6DB2E2387D8020036096A = {
+			isa = PBXGroup;
+			children = (
+				60F6DB392387D8020036096A /* MidtermExam */,
+				60F6DB382387D8020036096A /* Products */,
+				A9191ABBDD68F199E2DD2B15 /* Pods */,
+				9DD64D734B30EA62F12C2741 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		60F6DB382387D8020036096A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60F6DB372387D8020036096A /* MidtermExam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60F6DB392387D8020036096A /* MidtermExam */ = {
+			isa = PBXGroup;
+			children = (
+				38F9E049238BA1E70089E29E /* ITIS-CS 4180 Midterm Message Threads App.postman_collection.json */,
+				60F6DB3A2387D8020036096A /* AppDelegate.swift */,
+				60F6DB3E2387D8020036096A /* Main.storyboard */,
+				60F6DB412387D8030036096A /* Assets.xcassets */,
+				60F6DB432387D8030036096A /* LaunchScreen.storyboard */,
+				60F6DB462387D8030036096A /* Info.plist */,
+				6095B3E82387D9A400A62012 /* LoginViewController.swift */,
+				6095B3EA2387D9B200A62012 /* SignUpViewController.swift */,
+				6095B3EC2387D9BE00A62012 /* ThreadsViewController.swift */,
+				38F9E03D238A12220089E29E /* User.swift */,
+				38F9E03F238B0FFC0089E29E /* ThreadTableViewCell.swift */,
+				38F9E040238B0FFC0089E29E /* ThreadTableViewCell.xib */,
+				38F9E043238B4B2B0089E29E /* MessagesViewController.swift */,
+				38F9E045238B4B420089E29E /* CreateMessageViewController.swift */,
+				38F9E047238B4B540089E29E /* MessageDetailsViewController.swift */,
+			);
+			path = MidtermExam;
+			sourceTree = "<group>";
+		};
+		9DD64D734B30EA62F12C2741 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D43837CF14871A9428453A08 /* Pods_MidtermExam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9191ABBDD68F199E2DD2B15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8190C70F52D9445E03B814E1 /* Pods-MidtermExam.debug.xcconfig */,
+				3802639A9EE1EAC314C798E8 /* Pods-MidtermExam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60F6DB362387D8020036096A /* MidtermExam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60F6DB492387D8030036096A /* Build configuration list for PBXNativeTarget "MidtermExam" */;
+			buildPhases = (
+				3A10BA99E41105FE301A7B66 /* [CP] Check Pods Manifest.lock */,
+				60F6DB332387D8020036096A /* Sources */,
+				60F6DB342387D8020036096A /* Frameworks */,
+				60F6DB352387D8020036096A /* Resources */,
+				D84308E6612A1E886C01F6ED /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MidtermExam;
+			productName = MidtermExam;
+			productReference = 60F6DB372387D8020036096A /* MidtermExam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60F6DB2F2387D8020036096A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = UNCC;
+				TargetAttributes = {
+					60F6DB362387D8020036096A = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 60F6DB322387D8020036096A /* Build configuration list for PBXProject "MidtermExam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60F6DB2E2387D8020036096A;
+			productRefGroup = 60F6DB382387D8020036096A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60F6DB362387D8020036096A /* MidtermExam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60F6DB352387D8020036096A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38F9E04A238BA1E70089E29E /* ITIS-CS 4180 Midterm Message Threads App.postman_collection.json in Resources */,
+				60F6DB452387D8030036096A /* LaunchScreen.storyboard in Resources */,
+				60F6DB422387D8030036096A /* Assets.xcassets in Resources */,
+				60F6DB402387D8020036096A /* Main.storyboard in Resources */,
+				38F9E042238B0FFC0089E29E /* ThreadTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A10BA99E41105FE301A7B66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MidtermExam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D84308E6612A1E886C01F6ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MidtermExam/Pods-MidtermExam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MidtermExam/Pods-MidtermExam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MidtermExam/Pods-MidtermExam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60F6DB332387D8020036096A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6095B3E92387D9A400A62012 /* LoginViewController.swift in Sources */,
+				38F9E048238B4B540089E29E /* MessageDetailsViewController.swift in Sources */,
+				38F9E044238B4B2B0089E29E /* MessagesViewController.swift in Sources */,
+				6095B3ED2387D9BE00A62012 /* ThreadsViewController.swift in Sources */,
+				6095B3EB2387D9B200A62012 /* SignUpViewController.swift in Sources */,
+				38F9E046238B4B420089E29E /* CreateMessageViewController.swift in Sources */,
+				38F9E03E238A12220089E29E /* User.swift in Sources */,
+				60F6DB3B2387D8020036096A /* AppDelegate.swift in Sources */,
+				38F9E041238B0FFC0089E29E /* ThreadTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		60F6DB3E2387D8020036096A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60F6DB3F2387D8020036096A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60F6DB432387D8030036096A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60F6DB442387D8030036096A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60F6DB472387D8030036096A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60F6DB482387D8030036096A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60F6DB4A2387D8030036096A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8190C70F52D9445E03B814E1 /* Pods-MidtermExam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MidtermExam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.MidtermExam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60F6DB4B2387D8030036096A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3802639A9EE1EAC314C798E8 /* Pods-MidtermExam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MidtermExam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uncc.MidtermExam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60F6DB322387D8020036096A /* Build configuration list for PBXProject "MidtermExam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60F6DB472387D8030036096A /* Debug */,
+				60F6DB482387D8030036096A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60F6DB492387D8030036096A /* Build configuration list for PBXNativeTarget "MidtermExam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60F6DB4A2387D8030036096A /* Debug */,
+				60F6DB4B2387D8030036096A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60F6DB2F2387D8020036096A /* Project object */;
+}

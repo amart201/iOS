@@ -1,0 +1,329 @@
+{
+	"info": {
+		"_postman_id": "ec9b64d2-ccbe-405d-8719-f5443ab0ef50",
+		"name": "ITIS/CS 4180 Midterm Message Threads App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0466b22e-7716-47c7-94c9-58fb34c07097",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"token\", jsonData.token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "a@a.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-18-234-222-229.compute-1.amazonaws.com/api/login",
+					"protocol": "http",
+					"host": [
+						"ec2-18-234-222-229",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "c@c.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "fname",
+							"value": "Charlie",
+							"type": "text"
+						},
+						{
+							"key": "lname",
+							"value": "Smith",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-18-234-222-229.compute-1.amazonaws.com/api/signup",
+					"protocol": "http",
+					"host": [
+						"ec2-18-234-222-229",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/threads",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BEARER eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ0MTAxMDEsImV4cCI6MTYwNjAzMjUwMSwianRpIjoiNDNacmtzOHB2WHZQUlNVSkdaMkJPWiIsInVzZXIiOjJ9.xUf3PB3uOH8y5S48T1IT0hx_1rr64rp9NOI790exiE4"
+					}
+				],
+				"url": {
+					"raw": "http://ec2-18-234-222-229.compute-1.amazonaws.com/api/threads",
+					"protocol": "http",
+					"host": [
+						"ec2-18-234-222-229",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"threads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/thread/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BEARER eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ0MTAxMDEsImV4cCI6MTYwNjAzMjUwMSwianRpIjoiNDNacmtzOHB2WHZQUlNVSkdaMkJPWiIsInVzZXIiOjJ9.xUf3PB3uOH8y5S48T1IT0hx_1rr64rp9NOI790exiE4"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "test thread",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-18-234-222-229.compute-1.amazonaws.com/api/thread/add",
+					"protocol": "http",
+					"host": [
+						"ec2-18-234-222-229",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"thread",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/thread/delete/{thread_id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BEARER eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ0MTAxMDEsImV4cCI6MTYwNjAzMjUwMSwianRpIjoiNDNacmtzOHB2WHZQUlNVSkdaMkJPWiIsInVzZXIiOjJ9.xUf3PB3uOH8y5S48T1IT0hx_1rr64rp9NOI790exiE4"
+					}
+				],
+				"url": {
+					"raw": "http://ec2-18-234-222-229.compute-1.amazonaws.com/api/thread/delete/1",
+					"protocol": "http",
+					"host": [
+						"ec2-18-234-222-229",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"thread",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/messages/{thread_id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BEARER eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ0MTAxMDEsImV4cCI6MTYwNjAzMjUwMSwianRpIjoiNDNacmtzOHB2WHZQUlNVSkdaMkJPWiIsInVzZXIiOjJ9.xUf3PB3uOH8y5S48T1IT0hx_1rr64rp9NOI790exiE4"
+					}
+				],
+				"url": {
+					"raw": "http://ec2-18-234-222-229.compute-1.amazonaws.com/api/messages/1",
+					"protocol": "http",
+					"host": [
+						"ec2-18-234-222-229",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"messages",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/message/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BEARER eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQ0MTAxMDEsImV4cCI6MTYwNjAzMjUwMSwianRpIjoiNDNacmtzOHB2WHZQUlNVSkdaMkJPWiIsInVzZXIiOjJ9.xUf3PB3uOH8y5S48T1IT0hx_1rr64rp9NOI790exiE4"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "message",
+							"value": "testing message",
+							"type": "text"
+						},
+						{
+							"key": "thread_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-18-234-222-229.compute-1.amazonaws.com/api/message/add",
+					"protocol": "http",
+					"host": [
+						"ec2-18-234-222-229",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"message",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/message/delete/{message_id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "BEARER eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzQzOTkxMTAsImV4cCI6MTYwNjAyMTUxMCwianRpIjoiMlF4MzdNdWtab0dkOVpMczI2YjlXciIsInVzZXIiOjF9.4lRO-YmSVTFGuyPholGk6M5av3vY9Lx6mhz3VJtX1KE"
+					}
+				],
+				"url": {
+					"raw": "http://ec2-18-234-222-229.compute-1.amazonaws.com/api/message/delete/1",
+					"protocol": "http",
+					"host": [
+						"ec2-18-234-222-229",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"message",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "4a5d3acb-3c1c-461e-a324-ffe7b840e9bd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "de1aabfe-92a1-47da-9385-e3aaecfb0908",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

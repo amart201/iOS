@@ -1,0 +1,6 @@
+framework module Pods_MidtermExam {
+  umbrella header "Pods-MidtermExam-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_HW03 {
+  umbrella header "Pods-HW03-umbrella.h"
+
+  export *
+  module * { export * }
+}

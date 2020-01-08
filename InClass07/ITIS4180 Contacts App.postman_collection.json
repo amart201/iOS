@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "a7bd7ba8-c1b0-4e93-8e43-eed0f3b6a5da",
+		"name": "ITIS4180 Contacts App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/contacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-18-234-222-229.compute-1.amazonaws.com/contacts",
+					"protocol": "http",
+					"host": [
+						"ec2-18-234-222-229",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/contact/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Bob Smith",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "a@a.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "123-456-7890",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "HOME",
+							"description": "CELL, OFFICE or HOME",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/create",
+					"protocol": "http",
+					"host": [
+						"ec2-18-234-222-229",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"contact",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/contact/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Bob Smith",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "b@c.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "123-456-7890",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "HOME",
+							"description": "CELL, OFFICE or HOME",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/update",
+					"protocol": "http",
+					"host": [
+						"ec2-18-234-222-229",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"contact",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/contact/delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/delete",
+					"protocol": "http",
+					"host": [
+						"ec2-18-234-222-229",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"contact",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="ContactTableViewCell" customModule="HW02_Contacts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="117.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yho-Bo-xMg">
+                        <rect key="frame" x="16" y="11" width="174" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="174" id="H2q-E3-HEr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOJ-QM-evs">
+                        <rect key="frame" x="16" y="46" width="174" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="174" id="KlX-eR-d1Q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLe-KP-PqI">
+                        <rect key="frame" x="16" y="82" width="115" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Phone Type)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypf-k3-PsF">
+                        <rect key="frame" x="139" y="82" width="103" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djC-2o-ddK">
+                        <rect key="frame" x="322" y="77" width="45" height="30"/>
+                        <state key="normal" title="Delete"/>
+                        <connections>
+                            <action selector="deleteButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uFP-8g-naW"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Yho-Bo-xMg" secondAttribute="trailing" constant="170" id="0qU-Jl-xdl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Yho-Bo-xMg" secondAttribute="trailing" constant="299" id="1Wi-MC-peG"/>
+                    <constraint firstItem="VOJ-QM-evs" firstAttribute="top" secondItem="Yho-Bo-xMg" secondAttribute="bottom" constant="14" id="1tA-ot-EkL"/>
+                    <constraint firstItem="Yho-Bo-xMg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="6x6-Uc-f6W"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VOJ-QM-evs" secondAttribute="trailing" constant="302" id="AfV-M3-ZRM"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="yLe-KP-PqI" secondAttribute="bottom" constant="4" id="Hct-M7-K2L"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ypf-k3-PsF" secondAttribute="bottom" constant="4" id="JNV-vL-O7o"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VOJ-QM-evs" secondAttribute="trailing" constant="170" id="L1g-9s-itk"/>
+                    <constraint firstItem="VOJ-QM-evs" firstAttribute="leading" secondItem="Yho-Bo-xMg" secondAttribute="leading" id="M3F-sL-IU0"/>
+                    <constraint firstAttribute="bottom" secondItem="djC-2o-ddK" secondAttribute="bottom" constant="10.5" id="SC8-xM-QhT"/>
+                    <constraint firstItem="Yho-Bo-xMg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ToL-A1-dCi"/>
+                    <constraint firstItem="ypf-k3-PsF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="71" id="XUa-h2-aoC"/>
+                    <constraint firstItem="VOJ-QM-evs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="bae-lx-XFf"/>
+                    <constraint firstItem="yLe-KP-PqI" firstAttribute="top" secondItem="VOJ-QM-evs" secondAttribute="bottom" constant="15" id="f7I-0N-4aE"/>
+                    <constraint firstAttribute="trailing" secondItem="djC-2o-ddK" secondAttribute="trailing" constant="9" id="i6x-0e-rJP"/>
+                    <constraint firstItem="ypf-k3-PsF" firstAttribute="leading" secondItem="yLe-KP-PqI" secondAttribute="trailing" constant="8" id="ly6-si-JGw"/>
+                    <constraint firstItem="yLe-KP-PqI" firstAttribute="leading" secondItem="VOJ-QM-evs" secondAttribute="leading" id="p9K-xw-Z1x"/>
+                    <constraint firstItem="yLe-KP-PqI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qCq-Wc-r3T"/>
+                    <constraint firstItem="ypf-k3-PsF" firstAttribute="leading" secondItem="yLe-KP-PqI" secondAttribute="trailing" constant="8" id="zhc-wb-U5D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailLabel" destination="VOJ-QM-evs" id="TCA-VT-e1Q"/>
+                <outlet property="nameLabel" destination="Yho-Bo-xMg" id="tYn-c3-hkI"/>
+                <outlet property="phoneNumberLabel" destination="yLe-KP-PqI" id="Egd-UW-7YK"/>
+                <outlet property="phoneTypeLabel" destination="ypf-k3-PsF" id="7Ik-av-BHE"/>
+            </connections>
+            <point key="canvasLocation" x="8" y="81.859070464767626"/>
+        </tableViewCell>
+    </objects>
+</document>
